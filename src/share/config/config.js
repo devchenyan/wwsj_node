@@ -4,5 +4,4 @@
  */
 export default {
   //key: value
-  // route_on: true
 };
