@@ -1,16 +1,21 @@
-.my-container {
+article {
+    margin-top: 70px;
+    width: 100%;
+}
+
+section {
     background-color: #fff;
     width: 100%;
     margin-top: 10px;
 }
 
-.my-container .my-block {
+section .block {
     margin: 0 13px;
     display: flex;
     flex-direction: column
 }
 
-.my-block .my-user-block {
+.block-user {
     margin-top: 15px;
     display: flex;
     flex-direction: row;
@@ -18,64 +23,64 @@
 }
 
 /* 用户头像 */
-.my-block .my-user-block .my-avatar {
+.block-user-avatar {
     width: 60px;
     height: 60px;
     flex: 1;
 }
 
-.my-block .my-user-block .my-avatar .my-avatar-img {
+.block-user-avatar img {
     height: 60px;
     width: 60px;
     border-radius:60px;
 }
 
-.my-block .my-user-block .my-user-info {
+.block-user-info {
     flex: 4;
 }
 
-.my-block .my-user-block .my-user-info .my-nickname {
+.block-user-info .nickname {
     color: #506290;
     font-size: larger;
 }
 
 /* 发布时间 */
-.my-block .my-user-block .my-user-info .my-time {
+.block-user-info .time {
     color: #afb0b2;
 }
 
-.my-block .my-description {
+.block-description {
     margin-top: 10px;
     margin-bottom: 15px;
     color: #505152;
 }
 
-.my-block .my-line {
+.block-line {
     background-color: #f2f4f7;
     height: 0.5px;
     width: 100%;
     flex: 0;
 }
 
-.my-block .my-cell {
+.block-cell {
     min-height: 44px;
     display: flex;
     flex-direction: row;
     align-items: center
 }
 
-.my-cell .my-label {
+.block-cell .label {
     color: #afb0b2;
     flex: 1;
 }
 
-.my-cell .my-text {
+.block-cell .text {
     color: #505152;
     flex: 3;
     padding: 10px 0;
 }
 
-.my-cell .my-vertical {
+.block-cell .vertical {
     color: #f2f4f7;
     font-size: larger;
     width: 10px;

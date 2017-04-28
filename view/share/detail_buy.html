@@ -1,0 +1,87 @@
+{% extends "./detail_base.html" %}
+
+{% block title %}
+<title> 【买车信息】{{ description }} </title>
+{% endblock %}
+
+{% block main %}
+
+<!--用户-->
+<section>
+    <div class="block">
+        <!--上半部分-->
+        <div class="block-user">
+            <!--头像-->
+            <div class="block-user-avatar">
+                <img src="{{ avatarPath }}"/>
+            </div>
+            <!--右边-->
+            <div class="block-user-info">
+                <div class="nickname">
+                    {{ nickname }}
+                </div>
+                <div class="time">
+                    {{ addtime }}
+                </div>
+            </div>
+        </div>
+        <!--具体描述-->
+        <div class="block-description">
+            {{ description }}
+        </div>
+    </div>
+</section>
+
+<!--第一部分-->
+<section>
+    <div class="block">
+        <!--品牌-->
+        <div class="block-cell">
+            <div class="label">品牌</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ brand }}</div>
+        </div>
+        <div class="block-line"></div>
+        <!--型号-->
+        <div class="block-cell">
+            <div class="label">型号</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ version }}</div>
+        </div>
+        <div class="block-line"></div>
+        <!--类型-->
+        <div class="block-cell">
+            <div class="label">类型</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ cartype }}</div>
+        </div>
+    </div>
+</section>
+
+<!--第二部分-->
+<section>
+    <div class="block">
+        <!--联系人-->
+        <div class="block-cell">
+            <div class="label">联系人</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ contacts }}</div>
+        </div>
+        <div class="block-line"></div>
+        <!--联系电话-->
+        <div class="block-cell">
+            <div class="label">联系电话</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ phone }}</div>
+        </div>
+        <div class="block-line"></div>
+        <!--地点-->
+        <div class="block-cell">
+            <div class="label">地点</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ address }}</div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
