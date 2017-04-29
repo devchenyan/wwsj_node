@@ -81,4 +81,30 @@ export default class extends Base {
     });
     return this.display();
   }
+
+  // 招聘信息
+  async recruitAction(){
+    let instance = this.model('cms_recruit');
+    let obj = await instance.where({id: this.get('id')}).find();
+    let user = obj.user;
+
+    this.assign({
+      avatarPath: this.getAvatarUrl(user.avatar.path),
+      nickname: user.nickname,
+
+      addtime: this.getAddtime(obj.addtime),
+      description: obj.description,
+
+      companyname: obj.companyname,
+      workback: obj.workback,
+      educational: obj.educational,
+
+      jobtitle: obj.jobtitle,
+      salary: obj.salary,
+
+      phone: this.getPhoneNum(obj.phone),// + "下载App查看",
+      workplace: obj.workplace
+    });
+    return this.display();
+  }
 }

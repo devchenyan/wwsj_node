@@ -1,0 +1,99 @@
+{% extends "./detail_base.html" %}
+
+{% block title %}
+<title> 【招聘信息】{{ description }} </title>
+{% endblock %}
+
+{% block main %}
+
+<!--用户-->
+<section>
+    <div class="block">
+        <!--上半部分-->
+        <div class="block-user">
+            <!--头像-->
+            <div class="block-user-avatar">
+                <img src="{{ avatarPath }}"/>
+            </div>
+            <!--右边-->
+            <div class="block-user-info">
+                <div class="nickname">
+                    {{ nickname }}
+                </div>
+                <div class="time">
+                    {{ addtime }}
+                </div>
+            </div>
+        </div>
+        <!--具体描述-->
+        <div class="block-description">
+            {{ description }}
+        </div>
+    </div>
+</section>
+
+<!--第一部分-->
+<section>
+    <div class="block">
+        <!--公司名称-->
+        <div class="block-cell">
+            <div class="label">公司名称</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ companyname }}</div>
+        </div>
+        <div class="block-line"></div>
+        <!--要求经验-->
+        <div class="block-cell">
+            <div class="label">要求经验</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ workback }}</div>
+        </div>
+        <div class="block-line"></div>
+        <!--要求学历-->
+        <div class="block-cell">
+            <div class="label">要求学历</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ educational }}</div>
+        </div>
+    </div>
+</section>
+
+<!--第二部分-->
+<section>
+    <div class="block">
+        <!--职位-->
+        <div class="block-cell">
+            <div class="label">职位</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ jobtitle }}</div>
+        </div>
+        <div class="block-line"></div>
+        <!--薪资待遇-->
+        <div class="block-cell">
+            <div class="label">薪资待遇</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ salary }}</div>
+        </div>
+    </div>
+</section>
+
+<!--第三部分-->
+<section>
+    <div class="block">
+        <!--联系电话-->
+        <div class="block-cell">
+            <div class="label">联系电话</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ phone }}</div>
+        </div>
+        <div class="block-line"></div>
+        <!--工作地点-->
+        <div class="block-cell">
+            <div class="label">工作地点</div>
+            <span class="vertical">|</span>
+            <div class="text">{{ workplace }}</div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
