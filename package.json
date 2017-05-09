@@ -1,12 +1,13 @@
 {
-  "name": "thinkjs-application",
-  "description": "application created by thinkjs",
+  "name": "wwsj-node",
+  "description": "application created by www.wawawa.net.cn",
   "version": "1.0.0",
   "scripts": {
     "start": "node www/development.js",
     "compile": "babel src/ --out-dir app/",
     "watch-compile": "node -e \"console.log('<npm run watch-compile> no longer need, use <npm start> command direct.');console.log();\"",
-    "watch": "npm run watch-compile"
+    "watch": "npm run watch-compile",
+    "pm2": "pm2 startOrReload pm2.json"
   },
   "dependencies": {
     "babel-runtime": "6.x.x",
