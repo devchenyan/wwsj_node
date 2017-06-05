@@ -13,7 +13,8 @@ export default class extends Base {
     return phone.substring(0, 3) + "****" + phone.substring(7);
   }
   getAddtime(addtime){
-    return new Date(addtime * 1000).toLocaleDateString();
+    // return new Date(addtime * 1000).toLocaleDateString();
+    return new Date(addtime * 1000).toLocaleString().replace(/:\d{1,2}$/,' ');
   }
 
   // 买车信息
